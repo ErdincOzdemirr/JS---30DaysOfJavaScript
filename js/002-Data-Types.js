@@ -40,13 +40,24 @@
 
 // console.log (age, gravity, mass, PI, boilingPoint, bodyTemp )
 
-const PI = Math.PI;
-console.log(PI);
+// const PI = Math.PI;
+// console.log(PI);
 
-console.log(Math.round(PI));
-console.log(Math.floor(PI));
-console.log(Math.ceil(PI));
+// console.log(Math.round(PI));
+// console.log(Math.floor(PI));
+// console.log(Math.ceil(PI));
 
-console.log(Math.min(-5, 3, 20, 4, 5, 10)) // En küçük sayıyı bulmaya yaradığı için sonuç -5 döner
+// console.log(Math.min(-5, 3, 20, 4, 5, 10)) // En küçük sayıyı bulmaya yaradığı için sonuç -5 döner
 
-console.log(Math.max(-5, 3, 20, 4, 5, 10)) // En büyük sayıyı bulmaya yaradığı için sonuç 20 döner
+// console.log(Math.max(-5, 3, 20, 4, 5, 10)) // En büyük sayıyı bulmaya yaradığı için sonuç 20 döner
+
+const num = Math.round(Math.random () * 11) // 0 ile 10 arasında rastgele sayı oluşturur
+console.log(num)
+
+let randomNum = Math.random()         // 0 ile 0.999 arasında oluşturur
+let numBtnZeroAndTen = randomNum * 11
+
+console.log(numBtnZeroAndTen)         // Sonuç : minimum  0 ve maksimum 10.99
+
+let randomNumRoundToRound = Math.round (numBtnZeroAndTen) // yuvarlama yapıyor
+console.log(randomNumRoundToRound)    // Sonuç 0 ile  10 arasında çıkar
