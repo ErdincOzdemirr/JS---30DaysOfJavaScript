@@ -81,3 +81,138 @@
 
 // let fullName = `${name1} ${surname}`;
 // console.log(fullName);
+
+//String Method
+
+//1.length
+// let js = "JavaScript";
+// console.log(js.length);
+
+// let firstName = "Erdinc";
+// console.log(firstName.length);
+
+//2.accessing characters in a string
+// let dizi = ["e", "r", "d", "i", "n", "c"];
+// let lastIndex = firstName.length - 1;
+
+// console.log(firstName[lastIndex]);
+
+//3. toUpperCase():
+// console.log(firstName.toUpperCase());
+
+//4. toLowerCase ()
+// console.log(firstName.toLowerCase());
+
+//5. substr()
+// let country = 'Finland'
+// console.log(country.substr(3, 4))
+
+//6. substring()
+// let string = 'JavaScript'
+
+// console.log(string.substring(0,4))     // Java
+// console.log(string.substring(4,10))    //script
+// console.log(string.substring(4, 7)) //scr
+
+//7. split()
+// let string = '30 Days Of JavaScript'
+
+// console.log(string.split()); // bu kısımda birşey belirtmediğin için 1 elementli array oluştu -> ["30 Days Of JavaScript"]
+// console.log(string.split(" ")); // bu kısımda boşluktan böl dediğimiz için 4 elementli array oluştu -> ["30", "Days", "Of", "JavaScript"]
+
+//8.trim()
+// let firstName = " Asabeneh ";
+
+// console.log(firstName);
+// console.log(firstName.trim()); // içinde tırnak kullanmasanız dahi boşlukları siler
+
+//9. includes()
+// let string = "30 Days Of JavaScript";
+
+// console.log(string.includes("Days")); // true
+// console.log(string.includes("days")); // false - birebir arama yapar!
+// console.log(string.includes("Script")); // true
+// console.log(string.includes("script")); // false
+// console.log(string.includes("java")); // false
+// console.log(string.includes("Java")); // true
+
+//10. replace()
+// let string = "Erdinc Ozdemir is a lawyer";
+// console.log(string.replace("lawyer", "developer"));
+
+//11. chartAt()
+// let string = "30 Days Of JavaScript";
+
+// console.log(string.charAt(3)); //D
+
+//12. charCodeAt(): String'teki vermiş olduğunuz index değerinin ASCII numarasını döndürür.
+// string.charCodeAt(index)
+// let string = '30 Days Of JavaScript'
+// console.log(string.charCodeAt(3))        // D ASCII 68
+
+// let lastIndex = string.length - 1
+// console.log(string.charCodeAt(lastIndex))
+
+//13.indexOf(): Bu metot belirtilen değerin indeksini verir. Değer bulunamazsa -1 sonucunu döndürür. ( Birebir arama yapar örneğe bakın )
+
+// let string = "30 Days Of JavaScript";
+
+// console.log(string.indexOf("D"));
+// console.log(string.indexOf("Of"));
+// console.log(string.indexOf("j"));,,
+
+//16.startsWith
+
+// let string = 'Love is the best to in this world'
+
+// console.log(string.startsWith('Love'))   // true
+// console.log(string.startsWith('love'))   // false
+// console.log(string.startsWith('world'))  // false
+
+// endsWith: String'in belirtilen değer ile bitip bitmediğini kontrol eder. true yada false döndürür.
+// string.endsWith(substring)
+// let string = 'Love is the most powerful feeling in the world'
+
+// console.log(string.endsWith('world'))         // true
+// console.log(string.endsWith('love'))          // false
+// console.log(string.endsWith('in the world')) // true
+
+//20. repeat(): bağımsız değişken olarak bir sayı alır ve stringi sayı kadar döndürür.
+// string.repeat(n)
+// let string = 'love'
+// console.log(string.repeat(10)) // lovelovelovelovelovelovelovelovelovelove
+
+// let num1 = '10'
+// let numInt1 = parseInt(num1)
+// console.log(numInt1) // 10
+// let num2 = '10'
+// let numInt2 = Number(num2)
+
+// console.log(numInt2) // 10
+// let num3 = '10'
+// let numInt3 = +num3
+
+// console.log(numInt3) // 10
+
+// let num1 = '9.81'
+// let numFloat1 = parseFloat(num1)
+
+// console.log(numFloat1) // 9.81
+// let num2 = '9.81'
+// let numFloat2 = Number(num2)
+
+// console.log(numFloat2) // 9.81
+// let num3 = '9.81'
+// let numFloat3 = +num3
+
+// console.log(numFloat3) // 9.81
+
+// let num = 9.81
+// let numInt = parseInt(num)
+
+// console.log(numInt) // 9
+
+
+// Exercise lvl 1 //
+
+30 
