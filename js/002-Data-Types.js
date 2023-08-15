@@ -334,3 +334,75 @@ console.log(`1\t`.repeat(5),"\n2\t1\t2\t4\t8\n3\t1\t3\t9\t27\n4\t1\t4\t16\t64\n5
 // 2.12
 const sentence = "You cannot end a sentence with because because because is a conjunction";
 console.log(sentence.substr(39,15))
+
+
+// Exercise lvl 3
+
+// 3.1
+const word1 = "Love is the best thing in this world. Some found their love and some are still looking for their love";
+var regex = /love/gi;
+console.log(word1.match(regex));
+console.log(word1.match(regex).length);
+
+// 3.2
+const because = "You cannot end a sentence with because because because is a conjunction";
+var regex = /because/gi;
+console.log(because.match(regex));
+console.log(because.match(regex).length);
+
+// 3.3
+const sentence1 = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
+
+const replace = sentence1.replace(/[^a-zA-Z0-9 ]/g, '');
+
+const mostAppearingWord = (str) => {
+    const words = str.split(' ');
+    const wordCount = {};
+
+    for (const word of words) {
+        if (wordCount[word]) {
+            wordCount[word]++;
+        } else {
+            wordCount[word] = 1;
+        }
+    }
+
+    let maxCount = 0;
+    let mostFrequentWord = '';
+
+    for (const word in wordCount) {
+        if (wordCount[word] > maxCount) {
+            maxCount = wordCount[word];
+            mostFrequentWord = word;
+        }
+    }
+
+    return mostFrequentWord;
+}
+
+console.log(replace);
+console.log(mostAppearingWord(replace));
+
+// 3.4
+let text = "He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.";
+
+// Maaşı, ikramiye ve kurs gelir bilgilerini çıkartma
+let salaryMatches = text.match(/\d+ euro/g);
+
+// Aylık maaşı ve kurs gelirini çıkartma
+let monthlySalary = parseInt(salaryMatches[0]);
+let monthlyCourseIncome = parseInt(salaryMatches[2]);
+
+// Yıllık ikramiye gelirini çıkartma
+let annualBonus = parseInt(salaryMatches[1]);
+
+// Yıllık toplam geliri hesaplama
+let annualTotalIncome = (monthlySalary + monthlyCourseIncome) * 12 + annualBonus;
+
+// Sonucu konsola yazdırma
+console.log("Kişinin yıllık toplam geliri: " + annualTotalIncome + " euro");
+
+
+
+
+
