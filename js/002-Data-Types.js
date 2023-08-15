@@ -212,7 +212,58 @@
 
 // console.log(numInt) // 9
 
-
 // Exercise lvl 1 //
 
-30 
+30; //1.1
+const challange = "30 Days Of JavaScript";
+// 1.2
+console.log(challange);
+//1.3
+console.log(challange.length)
+// 1.4
+console.log(challange.toUpperCase())
+// 1.5
+console.log(challange.toLowerCase())
+// 1.6
+console.log(challange.substr(2,8));
+// 1.7
+console.log(challange.substring(3,21))
+// 1.8
+console.log(challange.includes("Script"))
+// 1.9
+console.log(challange.split())
+// 1.10
+console.log(challange.split(' '))
+// 1.11
+const array = "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon"
+console.log(array.split())
+// 1.12
+console.log(challange.replace("JavaScript", "Python"))
+// 1.13
+console.log(challange.charAt(15))
+// 1.14
+console.log(challange.charCodeAt(11))
+// 1.15
+console.log(challange.indexOf("a"));
+// 1.16
+console.log(challange.lastIndexOf("a"));
+// 1.17
+const conjunction = "You cannot end a sentence with because because because is a conjunction";
+console.log(conjunction.indexOf("because"));
+// 1.18
+console.log(conjunction.lastIndexOf("because"))
+// 1.19
+console.log(conjunction.search("because"))
+// 1.20
+console.log(challange.trim())
+// 1.21
+console.log(challange.startsWith(30))
+// 1.22
+console.log(challange.endsWith("JavaScript"))
+// 1.23
+console.log(challange.match("a"))
+// 1.24
+const concatchallange = "30 Days Of" ;
+console.log(concatchallange.concat(" Javascript"))
+// 1.25
+console.log(challange.repeat(2));
