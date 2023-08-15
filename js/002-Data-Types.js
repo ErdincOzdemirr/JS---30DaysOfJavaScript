@@ -267,3 +267,70 @@ const concatchallange = "30 Days Of" ;
 console.log(concatchallange.concat(" Javascript"))
 // 1.25
 console.log(challange.repeat(2));
+
+
+// Exercise lvl 2
+
+// 2.1
+const text = 'The quote \'There is no exercise better for the heart than reaching down and lifting people up.\' by John Holmes teaches us to help one another.';
+console.log(text);
+
+// 2.2
+const quote = 'Love is not patronizing and charity isn\'t about pity, it is about love. Charity and love are the same -- with charity you give love, so don\'t just give money but reach out your hand instead.';
+
+console.log(quote);
+
+// 2.3
+//  parseInt()
+// Number()
+// Plus sign(+)
+const numberOne = "10"
+const numberTwo = 10
+console.log(numberOne === numberTwo)
+
+const numInt = parseInt(numberOne)
+console.log(numInt === numberTwo)
+
+// 2.4
+const floatNumber = 9.8;
+const num2 = 10;
+console.log(floatNumber === num2);
+
+var numbers = Math.round(floatNumber);
+console.log(numbers === num2);
+
+// 2.5
+const control = "Python Jargon"
+console.log(control.includes("on"))
+
+// 2.6
+const jargon = "I hope this course is not full of jargon";
+console.log(jargon.includes("jargon"));
+
+// 2.7
+const numRandom = Math.round(Math.random()*101)
+console.log(numRandom)
+
+// 2.8
+var min = 50;
+var max = 100;
+
+var randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+
+console.log(randomNum);
+
+// 2.9
+const randomNumber = Math.round(Math.random()*256)
+console.log(randomNumber);
+
+// 2.10
+const word = "JavaScript"
+console.log(word.charAt(Math.round(Math.random()*word.length)));
+
+// 2.11
+
+console.log(`1\t`.repeat(5),"\n2\t1\t2\t4\t8\n3\t1\t3\t9\t27\n4\t1\t4\t16\t64\n5\t1\t5\t25\t125")
+
+// 2.12
+const sentence = "You cannot end a sentence with because because because is a conjunction";
+console.log(sentence.substr(39,15))
