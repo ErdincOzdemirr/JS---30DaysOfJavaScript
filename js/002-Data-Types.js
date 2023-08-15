@@ -384,10 +384,10 @@ console.log(replace);
 console.log(mostAppearingWord(replace));
 
 // 3.4
-let text = "He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.";
+let text2 = "He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.";
 
 // Maaşı, ikramiye ve kurs gelir bilgilerini çıkartma
-let salaryMatches = text.match(/\d+ euro/g);
+let salaryMatches = text2.match(/\d+ euro/g);
 
 // Aylık maaşı ve kurs gelirini çıkartma
 let monthlySalary = parseInt(salaryMatches[0]);
