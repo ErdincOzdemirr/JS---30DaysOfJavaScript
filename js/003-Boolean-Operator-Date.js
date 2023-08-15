@@ -207,3 +207,5 @@
 
 // let humanReadableDate = `${day} ${months[month]} ${year}, ${days[dayNumber]}, ${hour}:${minute}:${seconds} `;
 // console.log(humanReadableDate)
+
+// Exercise lvl 2

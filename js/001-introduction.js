@@ -114,7 +114,29 @@ yil_2020;
 // age = 123456,
 
 // 10.  benimYasim ve seninYasin adlı iki değişken oluşturun ve bunlara aşağıdaki değerleri atayın. Ardından bunları tarayıcının konsolunda çalıştırın
-let benimYasim = 31;
-let seninYasin = 31;
-console.log("Ben " + benimYasim + " Yaşındayım");
-console.log("Sen " + seninYasin + " Yaşındasın");
+// let benimYasim = 31;
+// let seninYasin = 31;
+// console.log("Ben " + benimYasim + " Yaşındayım");
+// console.log("Sen " + seninYasin + " Yaşındasın");
+
+// Exercise lvl1
+let youtubeChannel = "ErdincDeveloper";
+let channelAge = 1;
+let isChannelStillActive = true;
+let secondChannel = null;
+let channelMoney = undefined;
+
+console.log(
+  youtubeChannel,
+  channelAge,
+  isChannelStillActive,
+  secondChannel,
+  channelMoney
+);
+
+// exercise lvl2
+console.log(typeof "Erdinc");
+console.log(typeof 31);
+console.log(typeof true);
+console.log(typeof null);
+console.log(typeof undefined);
