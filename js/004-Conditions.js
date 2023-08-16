@@ -128,73 +128,101 @@
 
 // Exercise lvl2
 
-// 2.1
-let score = parseInt(prompt("Sınav sonucunuzu giriniz"));
+// // 2.1
+// let score = parseInt(prompt("Sınav sonucunuzu giriniz"));
 
-switch (true) {
-  case score >= 80 && score <= 100:
-    console.log('grade = "A"');
-    break;
-  case score >= 70 && score < 80:
-    console.log('grade = "B"');
-    break;
-  case score >= 60 && score < 70:
-    console.log('grade = "C"');
-    break;
-  case score >= 50 && score < 60:
-    console.log('grade = "D"');
-    break;
-  case score >= 0 && score < 50:
-    console.log('grade = "F"');
-    break;
-  default:
-    console.log("valid score");
-}
+// switch (true) {
+//   case score >= 80 && score <= 100:
+//     console.log('grade = "A"');
+//     break;
+//   case score >= 70 && score < 80:
+//     console.log('grade = "B"');
+//     break;
+//   case score >= 60 && score < 70:
+//     console.log('grade = "C"');
+//     break;
+//   case score >= 50 && score < 60:
+//     console.log('grade = "D"');
+//     break;
+//   case score >= 0 && score < 50:
+//     console.log('grade = "F"');
+//     break;
+//   default:
+//     console.log("valid score");
+// }
 
-// 2.2
-let season = prompt("Mevsimi Girin");
+// // 2.2
+// let season = prompt("Mevsimi Girin");
 
-switch (season) {
-  case "Ocak":
-  case "Şubat":
-  case "Aralık":
-    console.log("Kış Mevsimindesiniz");
-    break;
-  case "Mart":
-  case "Nisan":
-  case "Mayıs":
-    console.log("Bahar Mevsimindesiniz");
-    break;
-  case "Haziran":
-  case "Temmuz":
-  case "Ağustos":
-    console.log("Yaz mevsimindesiniz");
-    break;
-  case "Eylül":
-  case "Ekim":
-  case "Kasım":
-    console.log("Sonbahar mevsimindesiniz");
-    break;
-  default:
-    console.log("error");
-    break;
-}
+// switch (season) {
+//   case "Ocak":
+//   case "Şubat":
+//   case "Aralık":
+//     console.log("Kış Mevsimindesiniz");
+//     break;
+//   case "Mart":
+//   case "Nisan":
+//   case "Mayıs":
+//     console.log("Bahar Mevsimindesiniz");
+//     break;
+//   case "Haziran":
+//   case "Temmuz":
+//   case "Ağustos":
+//     console.log("Yaz mevsimindesiniz");
+//     break;
+//   case "Eylül":
+//   case "Ekim":
+//   case "Kasım":
+//     console.log("Sonbahar mevsimindesiniz");
+//     break;
+//   default:
+//     console.log("error");
+//     break;
+// }
 
-// 2.3
-let day = prompt("Bugün Haftanın Hangi Günü?");
-switch (day.toLowerCase()) {
-  case "cumartesi":
-  case "pazar":
-    console.log("Bugün haftasonu");
-    break;
-  case "pazartesi":
-  case "salı":
-  case "çarşamba":
-  case "perşembe":
-  case "cuma":
-    console.log("Bugün haftaiçi");
-    break;
-  default:
-    console.log("error");
-    break;
+// // 2.3
+// let day = prompt("Bugün Haftanın Hangi Günü?");
+// switch (day.toLowerCase()) {
+//   case "cumartesi":
+//   case "pazar":
+//     console.log("Bugün haftasonu");
+//     break;
+//   case "pazartesi":
+//   case "salı":
+//   case "çarşamba":
+//   case "perşembe":
+//   case "cuma":
+//     console.log("Bugün haftaiçi");
+//     break;
+//   default:
+//     console.log("error");
+//     break;
+// }
+
+// Exercise lvl3
+
+let monthPrompt = prompt("Şuan hangi aydasınız");
+
+let month = monthPrompt.toLowerCase();
+if (
+  month === "ocak" ||
+  month === "mart" ||
+  month === "mayıs" ||
+  month === "temmuz" ||
+  month === "ağustos" ||
+  month === "ekim" ||
+  month === "aralık"
+) {
+  console.log(month + " ayı 31 gün içerir.");
+} else if (
+  month === "nisan" ||
+  month === "haziran" ||
+  month === "eylül" ||
+  month === "kasım"
+) {
+  console.log(month + " ayı 30 gündür");
+} else if (month === "şubat") {
+  console.log(month + " ayı 28 veya 29 gündür.");
+} else {
+  console.log("Geçersiz ay girişi");
 }
