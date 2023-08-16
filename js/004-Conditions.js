@@ -38,24 +38,46 @@
 // }
 
 // if else if else
-let a = prompt("Lütfen bir sayı giriniz");
-if (a > 0) {
-  console.log(`${a} is a positive number`);
-} else if (a == 0) {
-  console.log(`${a} is zero`);
-} else if (a < 0) {
-  console.log(`${a} is a negative number `);
-} else {
-  console.log(`${a} is not a number`);
+// let a = prompt("Lütfen bir sayı giriniz");
+// if (a > 0) {
+//   console.log(`${a} is a positive number`);
+// } else if (a == 0) {
+//   console.log(`${a} is zero`);
+// } else if (a < 0) {
+//   console.log(`${a} is a negative number `);
+// } else {
+//   console.log(`${a} is not a number`);
+// }
+
+// let weather = "sunny";
+// if (weather === "rainy") {
+//   console.log("You need a rain coat.");
+// } else if (weather === "cloudy") {
+//   console.log("It might be cold, you need a jacket.");
+// } else if (weather === "sunny") {
+//   console.log("Go out freely.");
+// } else {
+//   console.log("No need for rain coat.");
+// }
+
+//Switch - case kullanımı
+let num = prompt("Enter number");
+switch (true) {
+  case num > 0:
+    console.log("Number is positive");
+    break;
+  case num == 0:
+    console.log("Number is zero");
+    break;
+  case num < 0:
+    console.log("Number is negative");
+    break;
+  default:
+    console.log("Entered value was not a number");
 }
 
-let weather = "sunny";
-if (weather === "rainy") {
-  console.log("You need a rain coat.");
-} else if (weather === "cloudy") {
-  console.log("It might be cold, you need a jacket.");
-} else if (weather === "sunny") {
-  console.log("Go out freely.");
-} else {
-  console.log("No need for rain coat.");
-}
+//Ternary Operator
+let isRainning = true;
+isRainning
+  ? console.log("You need a rain coat")
+  : console.log("No need for a rain coat");
