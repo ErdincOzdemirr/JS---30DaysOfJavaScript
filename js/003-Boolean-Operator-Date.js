@@ -331,38 +331,34 @@ const date = new Date();
 let year = date.getFullYear(),
   month = date.getMonth(),
   day = String(date.getDate()).padStart(2, "0"),
-  hour = String(date.getHours()).padStart(2, "0"),
-  minute = String(date.getMinutes()).padStart(2, "0"),
-  seconds = String(date.getSeconds()).padStart(2, "0"),
   dayNumber = date.getDay();
 let months = [
-  "Ocak",
-  "Şubat",
-  "Mart",
-  "Nisan",
-  "Mayıs",
-  "Haziran",
-  "Temmuz",
-  "Ağustos",
-  "Eylül",
-  "Ekim",
-  "Kasım",
-  "Aralık",
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
 ];
 let days = [
-  "Pazar",
-  "Pazartesi",
-  "Salı",
-  "Çarşamba",
-  "Perşembe",
-  "Cuma",
-  "Cumartesi",
-  "Pazar",
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
 ];
 
 // örnek time: 15 Ağustos 2023, Çarşamba, 21:21:21
 
-let humanReadableDate = `${day} ${months[month]} ${year}, ${days[dayNumber]}, ${hour}:${minute}:${seconds} `;
+let humanReadableDate = `${day} ${months[month]} ${year}, ${days[dayNumber]}`;
 console.log(humanReadableDate);
 
 // Exercise lvl 3
