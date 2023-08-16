@@ -61,23 +61,67 @@
 // }
 
 //Switch - case kullanımı
-let num = prompt("Enter number");
-switch (true) {
-  case num > 0:
-    console.log("Number is positive");
-    break;
-  case num == 0:
-    console.log("Number is zero");
-    break;
-  case num < 0:
-    console.log("Number is negative");
-    break;
-  default:
-    console.log("Entered value was not a number");
+// let num = prompt("Enter number");
+// switch (true) {
+//   case num > 0:
+//     console.log("Number is positive");
+//     break;
+//   case num == 0:
+//     console.log("Number is zero");
+//     break;
+//   case num < 0:
+//     console.log("Number is negative");
+//     break;
+//   default:
+//     console.log("Entered value was not a number");
+// }
+
+// //Ternary Operator
+// let isRainning = true;
+// isRainning
+//   ? console.log("You need a rain coat")
+//   : console.log("No need for a rain coat");
+
+// Exercise lvl1
+
+// 1.1
+let age = parseInt(prompt("Yaşınızı Giriniz"));
+if (age >= 18) {
+  console.log("Ehliyet alabilecek yaştasın");
+} else {
+  let yearsToWait = 18 - age;
+  console.log(`Ehliyet alabilmek için ${yearsToWait} yıl beklemelisin`);
 }
 
-//Ternary Operator
-let isRainning = true;
-isRainning
-  ? console.log("You need a rain coat")
-  : console.log("No need for a rain coat");
+// 1.2
+let myAge = parseInt(prompt("Yaşını Gir"));
+let yourAge = parseInt(prompt("Onun Yaşını Gir"));
+if (myAge > yourAge) {
+  let ageDifference1 = myAge - yourAge;
+  console.log(`Senden ${ageDifference1} yaş büyüğüm`);
+} else if (myAge < yourAge) {
+  let ageDifference2 = yourAge - myAge;
+  console.log(`Benden ${ageDifference2} yaş büyüksün`);
+} else if (myAge == yourAge) {
+  console.log("Aynı yaştayız");
+} else {
+  s;
+  console.log("error");
+}
+
+//  1.3
+let a = 4;
+let b = 3;
+if (a > b) {
+  console.log(`${a},${b}'den büyüktür.`);
+} else {
+  console.log(`${b},${a}'dan büyüktür.`);
+}
+
+// 1.4
+let numberMod = parseInt(prompt("Enter a number"));
+if (numberMod % 2 == 0) {
+  console.log("Sayı Çifttir.");
+} else {
+  console.log("Sayı Tektir.");
+}
