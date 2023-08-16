@@ -84,44 +84,117 @@
 
 // Exercise lvl1
 
-// 1.1
-let age = parseInt(prompt("Yaşınızı Giriniz"));
-if (age >= 18) {
-  console.log("Ehliyet alabilecek yaştasın");
-} else {
-  let yearsToWait = 18 - age;
-  console.log(`Ehliyet alabilmek için ${yearsToWait} yıl beklemelisin`);
+// // 1.1
+// let age = parseInt(prompt("Yaşınızı Giriniz"));
+// if (age >= 18) {
+//   console.log("Ehliyet alabilecek yaştasın");
+// } else {
+//   let yearsToWait = 18 - age;
+//   console.log(`Ehliyet alabilmek için ${yearsToWait} yıl beklemelisin`);
+// }
+
+// // 1.2
+// let myAge = parseInt(prompt("Yaşını Gir"));
+// let yourAge = parseInt(prompt("Onun Yaşını Gir"));
+// if (myAge > yourAge) {
+//   let ageDifference1 = myAge - yourAge;
+//   console.log(`Senden ${ageDifference1} yaş büyüğüm`);
+// } else if (myAge < yourAge) {
+//   let ageDifference2 = yourAge - myAge;
+//   console.log(`Benden ${ageDifference2} yaş büyüksün`);
+// } else if (myAge == yourAge) {
+//   console.log("Aynı yaştayız");
+// } else {
+//   s;
+//   console.log("error");
+// }
+
+// //  1.3
+// let a = 4;
+// let b = 3;
+// if (a > b) {
+//   console.log(`${a},${b}'den büyüktür.`);
+// } else {
+//   console.log(`${b},${a}'dan büyüktür.`);
+// }
+
+// // 1.4
+// let numberMod = parseInt(prompt("Enter a number"));
+// if (numberMod % 2 == 0) {
+//   console.log("Sayı Çifttir.");
+// } else {
+//   console.log("Sayı Tektir.");
+// }
+
+// Exercise lvl2
+
+// 2.1
+let score = parseInt(prompt("Sınav sonucunuzu giriniz"));
+
+switch (true) {
+  case score >= 80 && score <= 100:
+    console.log('grade = "A"');
+    break;
+  case score >= 70 && score < 80:
+    console.log('grade = "B"');
+    break;
+  case score >= 60 && score < 70:
+    console.log('grade = "C"');
+    break;
+  case score >= 50 && score < 60:
+    console.log('grade = "D"');
+    break;
+  case score >= 0 && score < 50:
+    console.log('grade = "F"');
+    break;
+  default:
+    console.log("valid score");
 }
 
-// 1.2
-let myAge = parseInt(prompt("Yaşını Gir"));
-let yourAge = parseInt(prompt("Onun Yaşını Gir"));
-if (myAge > yourAge) {
-  let ageDifference1 = myAge - yourAge;
-  console.log(`Senden ${ageDifference1} yaş büyüğüm`);
-} else if (myAge < yourAge) {
-  let ageDifference2 = yourAge - myAge;
-  console.log(`Benden ${ageDifference2} yaş büyüksün`);
-} else if (myAge == yourAge) {
-  console.log("Aynı yaştayız");
-} else {
-  s;
-  console.log("error");
+// 2.2
+let season = prompt("Mevsimi Girin");
+
+switch (season) {
+  case "Ocak":
+  case "Şubat":
+  case "Aralık":
+    console.log("Kış Mevsimindesiniz");
+    break;
+  case "Mart":
+  case "Nisan":
+  case "Mayıs":
+    console.log("Bahar Mevsimindesiniz");
+    break;
+  case "Haziran":
+  case "Temmuz":
+  case "Ağustos":
+    console.log("Yaz mevsimindesiniz");
+    break;
+  case "Eylül":
+  case "Ekim":
+  case "Kasım":
+    console.log("Sonbahar mevsimindesiniz");
+    break;
+  default:
+    console.log("error");
+    break;
 }
 
-//  1.3
-let a = 4;
-let b = 3;
-if (a > b) {
-  console.log(`${a},${b}'den büyüktür.`);
-} else {
-  console.log(`${b},${a}'dan büyüktür.`);
-}
-
-// 1.4
-let numberMod = parseInt(prompt("Enter a number"));
-if (numberMod % 2 == 0) {
-  console.log("Sayı Çifttir.");
-} else {
-  console.log("Sayı Tektir.");
+// 2.3
+let day = prompt("Bugün Haftanın Hangi Günü?");
+switch (day.toLowerCase()) {
+  case "cumartesi":
+  case "pazar":
+    console.log("Bugün haftasonu");
+    break;
+  case "pazartesi":
+  case "salı":
+  case "çarşamba":
+  case "perşembe":
+  case "cuma":
+    console.log("Bugün haftaiçi");
+    break;
+  default:
+    console.log("error");
+    break;
 }
