@@ -282,64 +282,72 @@
 
 //Exercise lvl2
 
-let text =
-  "I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.";
-console.log(text);
+// let text =
+//   "I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.";
+// console.log(text);
 
-let replace = text.replace(/[^a-zA-Z0-9 ]/gi, "");
-console.log(replace);
+// let replace = text.replace(/[^a-zA-Z0-9 ]/gi, "");
+// console.log(replace);
 
-let split = replace.split(" ");
-console.log(split);
-console.log(split.length);
+// let split = replace.split(" ");
+// console.log(split);
+// console.log(split.length);
 
-const shoppingCart = ["Milk", "Coffee", "Tea", "Honey"];
-console.log(shoppingCart);
+// const shoppingCart = ["Milk", "Coffee", "Tea", "Honey"];
+// console.log(shoppingCart);
 
-let meatAdd = shoppingCart.unshift("Meat");
-console.log(shoppingCart);
+// let meatAdd = shoppingCart.unshift("Meat");
+// console.log(shoppingCart);
 
-let sugarAdd = shoppingCart.push("Sugar");
-console.log(shoppingCart);
+// let sugarAdd = shoppingCart.push("Sugar");
+// console.log(shoppingCart);
 
-let honeyRemove = shoppingCart.splice(4, 1);
-console.log(shoppingCart);
+// let honeyRemove = shoppingCart.splice(4, 1);
+// console.log(shoppingCart);
 
-const countries = [
-  "Albania",
-  "Bolivia",
-  "Canada",
-  "Denmark",
-  "Ethiopia",
-  "Finland",
-  "Germany",
-  "Hungary",
-  "Ireland",
-  "Japan",
-  "Kenya",
-];
-let controlCountry = countries.includes("Ethiopia");
-console.log(controlCountry);
-console.log(countries[4]);
+// const countries = [
+//   "Albania",
+//   "Bolivia",
+//   "Canada",
+//   "Denmark",
+//   "Ethiopia",
+//   "Finland",
+//   "Germany",
+//   "Hungary",
+//   "Ireland",
+//   "Japan",
+//   "Kenya",
+// ];
+// let controlCountry = countries.includes("Ethiopia");
+// console.log(controlCountry);
+// console.log(countries[4]);
 
-const webTechs = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "React",
-  "Redux",
-  "Node",
-  "MongoDB",
-];
-console.log(webTechs);
+// const webTechs = [
+//   "HTML",
+//   "CSS",
+//   "JavaScript",
+//   "React",
+//   "Redux",
+//   "Node",
+//   "MongoDB",
+// ];
+// console.log(webTechs);
 
-let searchSass = webTechs.includes("Sass");
-console.log(searchSass);
-let addSass = webTechs.push("Sass");
-console.log(webTechs);
+// let searchSass = webTechs.includes("Sass");
+// console.log(searchSass);
+// let addSass = webTechs.push("Sass");
+// console.log(webTechs);
 
-let frontEnd = ["HTML", "CSS", "JS", "React", "Redux"];
-let backEnd = ["Node", "Express", "MongoDB"];
+// let frontEnd = ["HTML", "CSS", "JS", "React", "Redux"];
+// let backEnd = ["Node", "Express", "MongoDB"];
 
-let fullStackDev = frontEnd.concat(backEnd);
-console.log(fullStackDev);
+// let fullStackDev = frontEnd.concat(backEnd);
+// console.log(fullStackDev);
+
+// Exercise lvl3
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
+let ageLine = ages.sort();
+console.log(ageLine);
+console.log(ageLine.length);
+let arrayAge = ageLine.splice("");
+console.log(arrayAge[0], arrayAge[9]);
