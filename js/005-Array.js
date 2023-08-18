@@ -148,135 +148,198 @@
 
 // EXERCISE LVL1
 // 1.1
-const arrays = [];
+// const arrays = [];
 
-// 1.2
-const arrays2 = [1, 2, 3, 4, 5, 6, 7];
-console.log(arrays2);
+// // 1.2
+// const arrays2 = [1, 2, 3, 4, 5, 6, 7];
+// console.log(arrays2);
 
-// 1.3
-console.log(arrays2.length);
+// // 1.3
+// console.log(arrays2.length);
 
-// 1.4
-let firstValue = arrays2[0];
-let midValue = arrays2[(arrays2.length - 1) / 2];
-console.log(midValue);
-let lastValue = arrays2[arrays2.length - 1];
-console.log(lastValue);
+// // 1.4
+// let firstValue = arrays2[0];
+// let midValue = arrays2[(arrays2.length - 1) / 2];
+// console.log(midValue);
+// let lastValue = arrays2[arrays2.length - 1];
+// console.log(lastValue);
 
-// 1.5
-let mixedDataTypes = ["Erdinc", 30, true, null, "1", [7, 8, 9]];
-console.log("mixedDataTypes Uzunluk = " + mixedDataTypes.length);
+// // 1.5
+// let mixedDataTypes = ["Erdinc", 30, true, null, "1", [7, 8, 9]];
+// console.log("mixedDataTypes Uzunluk = " + mixedDataTypes.length);
 
-// 1.6
-let sirket = [
-  "Facebook",
-  "Google",
-  "Microsoft",
-  "Apple",
-  "IBM",
-  "Oracle",
-  "Amazon",
-];
+// // 1.6
+// let sirket = [
+//   "Facebook",
+//   "Google",
+//   "Microsoft",
+//   "Apple",
+//   "IBM",
+//   "Oracle",
+//   "Amazon",
+// ];
 
-1.7
-console.log(sirket);
+// 1.7
+// console.log(sirket);
 
-// 1.8
-console.log(sirket.length);
+// // 1.8
+// console.log(sirket.length);
 
-// 1.9
-console.log(
-  sirket[0],
-  sirket[(sirket.length - 1) / 2],
-  sirket[sirket.length - 1]
-);
+// // 1.9
+// console.log(
+//   sirket[0],
+//   sirket[(sirket.length - 1) / 2],
+//   sirket[sirket.length - 1]
+// );
 
-// 1.10
-console.log(sirket.splice(""));
+// // 1.10
+// console.log(sirket.splice(""));
 
-1.11
-let sirket = [
-  "Facebook",
-  "Google",
-  "Microsoft",
-  "Apple",
-  "IBM",
-  "Oracle",
-  "Amazon",
-];
-console.log(
-  sirket[0].toUpperCase(),
-  sirket[1].toUpperCase(),
-  sirket[2].toUpperCase(),
-  sirket[3].toUpperCase(),
-  sirket[4].toUpperCase(),
-  sirket[5].toUpperCase(),
-  sirket[6].toUpperCase()
-);
+// 1.11
+// let sirket = [
+//   "Facebook",
+//   "Google",
+//   "Microsoft",
+//   "Apple",
+//   "IBM",
+//   "Oracle",
+//   "Amazon",
+// ];
+// console.log(
+//   sirket[0].toUpperCase(),
+//   sirket[1].toUpperCase(),
+//   sirket[2].toUpperCase(),
+//   sirket[3].toUpperCase(),
+//   sirket[4].toUpperCase(),
+//   sirket[5].toUpperCase(),
+//   sirket[6].toUpperCase()
+// );
 
-1.12
-let sentence = [
-  "Facebook",
-  "Google",
-  "Microsoft",
-  "Apple",
-  "IBM",
-  "Oracle",
-  "Amazon",
-];
-let split = sentence.join(" ");
+// 1.12
+// let sentence = [
+//   "Facebook",
+//   "Google",
+//   "Microsoft",
+//   "Apple",
+//   "IBM",
+//   "Oracle",
+//   "Amazon",
+// ];
+// let split = sentence.join(" ");
+// console.log(split);
+
+// // 1.13
+
+// let index = sentence.indexOf("Twitter");
+// console.log(index);
+
+// 'o' harfi sayısı 2 veya daha fazla olan şirketleri filtrele
+//   let filteredCompanies = [];
+
+//   for (let i = 0; i < sentence.length; i++) {
+//     let count = 0;
+//     for (let j = 0; j < sentence[i].length; j++) {
+//       if (sentence[i][j] === 'o') {
+//         count++;
+//       }
+//     }
+//     if (count >= 2) {
+//       filteredCompanies.push(sentence[i]);
+//     }
+//   }
+
+//   console.log(filteredCompanies);
+
+// 1.15
+// console.log(sentence.sort());
+
+// // 1.16
+// console.log(sentence.reverse());
+
+// // 1.17
+// console.log(sentence.slice(0, 3));
+
+// // 1.18
+// console.log(sentence.slice(4, 7));
+
+// // 1.19
+// console.log(sentence.slice(3, 4));
+
+// // 1.20
+// console.log(sentence.shift());
+
+// 1.21
+// const middleRemove = sentence.splice(3, 1);
+// console.log(sentence);
+
+// // 1.22
+// console.log(sentence.pop());
+// console.log(sentence);
+
+// // 1.23
+// let deleteAllItems = sentence.splice();
+// console.log(deleteAllItems);
+
+//Exercise lvl2
+
+let text =
+  "I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.";
+console.log(text);
+
+let replace = text.replace(/[^a-zA-Z0-9 ]/gi, "");
+console.log(replace);
+
+let split = replace.split(" ");
 console.log(split);
+console.log(split.length);
 
-// 1.13
+const shoppingCart = ["Milk", "Coffee", "Tea", "Honey"];
+console.log(shoppingCart);
 
-let index = sentence.indexOf("Twitter");
-console.log(index);
+let meatAdd = shoppingCart.unshift("Meat");
+console.log(shoppingCart);
 
+let sugarAdd = shoppingCart.push("Sugar");
+console.log(shoppingCart);
 
-'o' harfi sayısı 2 veya daha fazla olan şirketleri filtrele
-  let filteredCompanies = [];
+let honeyRemove = shoppingCart.splice(4, 1);
+console.log(shoppingCart);
 
-  for (let i = 0; i < sentence.length; i++) {
-    let count = 0;
-    for (let j = 0; j < sentence[i].length; j++) {
-      if (sentence[i][j] === 'o') {
-        count++;
-      }
-    }
-    if (count >= 2) {
-      filteredCompanies.push(sentence[i]);
-    }
-  }
+const countries = [
+  "Albania",
+  "Bolivia",
+  "Canada",
+  "Denmark",
+  "Ethiopia",
+  "Finland",
+  "Germany",
+  "Hungary",
+  "Ireland",
+  "Japan",
+  "Kenya",
+];
+let controlCountry = countries.includes("Ethiopia");
+console.log(controlCountry);
+console.log(countries[4]);
 
-  console.log(filteredCompanies);
+const webTechs = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Redux",
+  "Node",
+  "MongoDB",
+];
+console.log(webTechs);
 
-1.15
-console.log(sentence.sort());
+let searchSass = webTechs.includes("Sass");
+console.log(searchSass);
+let addSass = webTechs.push("Sass");
+console.log(webTechs);
 
-// 1.16
-console.log(sentence.reverse());
+let frontEnd = ["HTML", "CSS", "JS", "React", "Redux"];
+let backEnd = ["Node", "Express", "MongoDB"];
 
-// 1.17
-console.log(sentence.slice(0, 3));
-
-// 1.18
-console.log(sentence.slice(4, 7));
-
-// 1.19
-console.log(sentence.slice(3, 4));
-
-// 1.20
-console.log(sentence.shift());
-
-1.21
-const middleRemove = sentence.splice(3, 1);
-console.log(sentence);
-
-// 1.22
-console.log(sentence.pop());
-console.log(sentence);
-
-// 1.23
-let deleteAllItems = sentence.splice();
-console.log(deleteAllItems);
+let fullStackDev = frontEnd.concat(backEnd);
+console.log(fullStackDev);
