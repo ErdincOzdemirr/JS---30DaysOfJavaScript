@@ -339,27 +339,29 @@
 // console.log("En Fazla Karakter İçeren Ülke:", longestCountry);
 
 // 2.10
-const countries = [
-  "ALBANIA",
-  "BOLIVIA",
-  "CANADA",
-  "DENMARK",
-  "ETHIOPIA",
-  "FINLAND",
-  "GERMANY",
-  "HUNGARY",
-  "IRELAND",
-  "JAPAN",
-  "KENYA",
-];
-const fiveCharCountries = [];
+// const countries = [
+//   "ALBANIA",
+//   "BOLIVIA",
+//   "CANADA",
+//   "DENMARK",
+//   "ETHIOPIA",
+//   "FINLAND",
+//   "GERMANY",
+//   "HUNGARY",
+//   "IRELAND",
+//   "JAPAN",
+//   "KENYA",
+// ];
+// const fiveCharCountries = [];
 
-for (let i = 0; i < countries.length; i++) {
-  const country = countries[i];
+// for (let i = 0; i < countries.length; i++) {
+//   const country = countries[i];
 
-  if (country.length === 5) {
-    fiveCharCountries.push(country);
-  }
-}
+//   if (country.length === 5) {
+//     fiveCharCountries.push(country);
+//   }
+// }
 
-console.log("Beş Karakter İçeren Ülkeler:", fiveCharCountries);
+// console.log("Beş Karakter İçeren Ülkeler:", fiveCharCountries);
+
+// Exercise lvl 3
