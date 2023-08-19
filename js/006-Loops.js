@@ -76,19 +76,19 @@
 // // 0 1 2
 
 // exercise lvl 1
-const countries = [
-  "Albania",
-  "Bolivia",
-  "Canada",
-  "Denmark",
-  "Ethiopia",
-  "Finland",
-  "Germany",
-  "Hungary",
-  "Ireland",
-  "Japan",
-  "Kenya",
-];
+// const countries = [
+//   "Albania",
+//   "Bolivia",
+//   "Canada",
+//   "Denmark",
+//   "Ethiopia",
+//   "Finland",
+//   "Germany",
+//   "Hungary",
+//   "Ireland",
+//   "Japan",
+//   "Kenya",
+// ];
 
 // const webTechs = [
 //   "HTML",
@@ -199,15 +199,167 @@ const countries = [
 // }
 // console.log(`0'dan 100'a tüm sayıların toplamı ${sum}`)
 
-let evenSum = 0;
-let oddSum = 0;
+// let evenSum = 0;
+// let oddSum = 0;
 
-for (let x = 0; x <= 100; x++) {
-  if (x % 2 === 0) {
-    evenSum += x; // Çift sayıları toplama ekler
-  } else {
-    oddSum += x; // Tek sayıları toplama ekler
+// for (let x = 0; x <= 100; x++) {
+//   if (x % 2 === 0) {
+//     evenSum += x; // Çift sayıları toplama ekler
+//   } else {
+//     oddSum += x; // Tek sayıları toplama ekler
+//   }
+// }
+// console.log("Çift sayıların toplamı", evenSum);
+// console.log("Tek sayıların toplamı", oddSum);
+
+// Exercise lvl2
+
+// 2.1
+// const characters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+// const idLength = 10; // İd uzunluğunu belirtin
+// let randomId = "";
+
+// for (let i = 0; i < idLength; i++) {
+//   const randomIndex = Math.floor(Math.random() * characters.length);
+//   randomId += characters[randomIndex];
+// }
+
+// console.log("Rastgele ID:", randomId);
+
+// 2.2
+// const hexCharacters = "0123456789ABCDEF";
+// const hexLength = 6;
+// let randomHex = "#";
+// for (let i = 0; i < hexLength; i++) {
+//   const randomIndex = Math.floor(Math.random() * hexCharacters.length);
+//   randomHex += hexCharacters[randomIndex];
+// }
+// console.log("Rastgele Hexadecimal Sayı : ", randomHex);
+
+// 2.3
+// const min = 0;
+// const max = 255;
+// const rgbValues = [];
+
+// for (let i = 0; i < 3; i++) {
+//   const randomValue = Math.floor(Math.random() * (max - min + 1)) + min;
+//   rgbValues.push(randomValue);
+// }
+
+// const randomRGB = `rgb(${rgbValues[0]}, ${rgbValues[1]}, ${rgbValues[2]})`;
+
+// console.log("Rastgele RGB Renk:", randomRGB);
+
+// 2.4
+// const countries = ["ALBANIA", "BOLIVIA", "CANADA", "DENMARK", "ETHIOPIA", "FINLAND", "GERMANY", "HUNGARY", "IRELAND", "JAPAN", "KENYA"];
+// const randomCountries = [];
+// const numRandomCountries = 11; // Kaç adet rastgele ülke istediğinizi belirtebilirsiniz
+
+// while (randomCountries.length < numRandomCountries) {
+//   const randomIndex = Math.floor(Math.random() * countries.length);
+//   const randomCountry = countries[randomIndex];
+
+//   if (!randomCountries.includes(randomCountry)) {
+//     randomCountries.push(randomCountry);
+//   }
+// }
+
+// console.log("Rastgele Ülkeler:", randomCountries);
+// 2.5
+// for (let i = 0; i < countries.length; i++) {
+//   countries[i] = countries[i].length;
+// }
+// console.log(countries);
+// 2.6
+// const countries = ["ALBANIA", "BOLIVIA", "CANADA", "DENMARK", "ETHIOPIA", "FINLAND", "GERMANY", "HUNGARY", "IRELAND", "JAPAN", "KENYA"];
+// const formattedCountries = [];
+
+// for (let i = 0; i < countries.length; i++) {
+//   const country = countries[i];
+//   const abbreviation = country.substring(0, 3);
+//   const length = country.length;
+//   const formattedCountry = [country.charAt(0) + country.slice(1).toLowerCase(), abbreviation, length];
+//   formattedCountries.push(formattedCountry);
+// }
+
+// console.log(formattedCountries);
+
+// 2.7
+// const countries = [
+//   "Albania",
+//   "Bolivia",
+//   "Canada",
+//   "Denmark",
+//   "Ethiopia",
+//   "Finland",
+//   "Germany",
+//   "Hungary",
+//   "Ireland",
+//   "Japan",
+//   "Kenya",
+// ];
+
+// const countries = [
+//   "ALBANIA",
+//   "BOLIVIA",
+//   "CANADA",
+//   "DENMARK",
+//   "ETHIOPIA",
+//   "FINLAND",
+//   "GERMANY",
+//   "HUNGARY",
+//   "IRELAND",
+//   "JAPAN",
+//   "KENYA",
+// ];
+// const countriesWithLand = [];
+
+// for (let i = 0; i < countries.length; i++) {
+//   const country = countries[i];
+
+//   if (country.includes("LA")) {
+//     countriesWithLand.push(country);
+//   }
+// }
+// console.log("Ülkelerde 'LA' İçerenler:", countriesWithLand);
+
+// 2.9
+// const countries = ["ALBANIA", "BOLIVIA", "CANADA", "DENMARK", "ETHIOPIA", "FINLAND", "GERMANY", "HUNGARY", "IRELAND", "JAPAN", "KENYA"];
+// let longestCountry = "";
+
+// for (let i = 0; i < countries.length; i++) {
+//   const country = countries[i];
+
+//   if (country.length === 5) {
+//     longestCountry.push(country);
+
+//   }
+// }
+
+// console.log("En Fazla Karakter İçeren Ülke:", longestCountry);
+
+// 2.10
+const countries = [
+  "ALBANIA",
+  "BOLIVIA",
+  "CANADA",
+  "DENMARK",
+  "ETHIOPIA",
+  "FINLAND",
+  "GERMANY",
+  "HUNGARY",
+  "IRELAND",
+  "JAPAN",
+  "KENYA",
+];
+const fiveCharCountries = [];
+
+for (let i = 0; i < countries.length; i++) {
+  const country = countries[i];
+
+  if (country.length === 5) {
+    fiveCharCountries.push(country);
   }
 }
-console.log("Çift sayıların toplamı", evenSum);
-console.log("Tek sayıların toplamı", oddSum);
+
+console.log("Beş Karakter İçeren Ülkeler:", fiveCharCountries);
