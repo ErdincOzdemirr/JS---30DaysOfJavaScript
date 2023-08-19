@@ -90,123 +90,123 @@ const countries = [
   "Kenya",
 ];
 
-const webTechs = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "React",
-  "Redux",
-  "Node",
-  "MongoDB",
-];
+// const webTechs = [
+//   "HTML",
+//   "CSS",
+//   "JavaScript",
+//   "React",
+//   "Redux",
+//   "Node",
+//   "MongoDB",
+// ];
 
-const mernStack = ["MongoDB", "Express", "React", "Node"];
+// const mernStack = ["MongoDB", "Express", "React", "Node"];
 
-//   1.1
+// //   1.1
 
-for (let a = 0; a <= 10; a++) {
-  console.log(a);
-}
-// while loop
-let b = 0;
-while (b < 10) {
-  b++;
-  console.log(b);
-}
+// for (let a = 0; a <= 10; a++) {
+//   console.log(a);
+// }
+// // while loop
+// let b = 0;
+// while (b < 10) {
+//   b++;
+//   console.log(b);
+// }
 
-// Do-While Loop
-let c = 0;
-do {
-  c++;
-  console.log(c);
-} while (c < 10);
+// // Do-While Loop
+// let c = 0;
+// do {
+//   c++;
+//   console.log(c);
+// } while (c < 10);
 
-// 1.2
-for (let i = 10; i>0; i--) {
-  console.log(i)
+// // 1.2
+// for (let i = 10; i>0; i--) {
+//   console.log(i)
 
-  let j = 10;
-  do {
-    j--;
-    console.log(j)
-  } while (j>0)
+//   let j = 10;
+//   do {
+//     j--;
+//     console.log(j)
+//   } while (j>0)
 
-let k = 10;
-while (k > 0) {
-  k--;
-  console.log(k);
-}
+// let k = 10;
+// while (k > 0) {
+//   k--;
+//   console.log(k);
+// }
 
-1.3
-let n = 100;
-for (let i = 0; i < n; i++) {
-  console.log(i);
-}
+// 1.3
+// let n = 100;
+// for (let i = 0; i < n; i++) {
+//   console.log(i);
+// }
 
-// 1.4
-let string = "";
-for (let i = 0; i < 7; i++) {
-  string += "#";
-  console.log(string);
-}
+// // 1.4
+// let string = "";
+// for (let i = 0; i < 7; i++) {
+//   string += "#";
+//   console.log(string);
+// }
 
-// 1.5
-for (let i = 0; i <= 10; i++) {
-  console.log(`${i} * ${i} = ${i * i}`);
-}
-// 1.6
-for (let i = 0; i <= 10; i++) {
-  console.log(`${i} ${i ** 2} ${i ** 3}`);
-}
+// // 1.5
+// for (let i = 0; i <= 10; i++) {
+//   console.log(`${i} * ${i} = ${i * i}`);
+// }
+// // 1.6
+// for (let i = 0; i <= 10; i++) {
+//   console.log(`${i} ${i ** 2} ${i ** 3}`);
+// }
 
-// 1.7
-for (let i = 0; i < 100; i++) {
-  if (i % 2 == 0) {
-    console.log(i);
-  }
-}
-// 1.8
-for (let i = 0; i < 100; i++) {
-  if (i % 2 !== 0) {
-    console.log(i);
-  }
-}
+// // 1.7
+// for (let i = 0; i < 100; i++) {
+//   if (i % 2 == 0) {
+//     console.log(i);
+//   }
+// }
+// // 1.8
+// for (let i = 0; i < 100; i++) {
+//   if (i % 2 !== 0) {
+//     console.log(i);
+//   }
+// }
 
-for (let i = 0; i < 100; i++) {
-  if (i % 2 == 1) {
-      console.log(i);
-  }
-}
+// for (let i = 0; i < 100; i++) {
+//   if (i % 2 == 1) {
+//       console.log(i);
+//   }
+// }
 
-for (let number = 2; number <= 100; number++) {
-  let isPrime = true;
+// for (let number = 2; number <= 100; number++) {
+//   let isPrime = true;
 
-  for (let i = 2; i <= Math.sqrt(number); i++) {
-    if (number % i === 0) {
-      isPrime = false;
-      break;
-    }
-  }
+//   for (let i = 2; i <= Math.sqrt(number); i++) {
+//     if (number % i === 0) {
+//       isPrime = false;
+//       break;
+//     }
+//   }
 
-  if (isPrime) {
-    console.log(number);
-  }
-}
+//   if (isPrime) {
+//     console.log(number);
+//   }
+// }
 
-let sum = 0;
-for (let i = 0; i <= 100; i++) {
-  sum += i;
-}
-console.log(`0'dan 100'a tüm sayıların toplamı ${sum}`)
+// let sum = 0;
+// for (let i = 0; i <= 100; i++) {
+//   sum += i;
+// }
+// console.log(`0'dan 100'a tüm sayıların toplamı ${sum}`)
 
 let evenSum = 0;
 let oddSum = 0;
 
-for (let i = 0; i <= 100; i++) {
-  if (i % 2 === 0) {
-    evenSum += i; // Çift sayıları toplama ekler
+for (let x = 0; x <= 100; x++) {
+  if (x % 2 === 0) {
+    evenSum += x; // Çift sayıları toplama ekler
   } else {
-    oddSum += i; // Tek sayıları toplama ekler
+    oddSum += x; // Tek sayıları toplama ekler
   }
 }
 console.log("Çift sayıların toplamı", evenSum);
