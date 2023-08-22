@@ -139,3 +139,26 @@ console.log(person.hasOwnProperty("country"));
 
 // Object.freeze(copyPerson);
 // object.seal (copyPerson); object e bişey ekleyemeden mevcut keyleri değiştirmek için kullanılır.)
+
+// Exercise lvl1
+
+const dog = {
+    name: "Karabas",
+    legs: 4,
+    color: "White",
+    age: 3,
+    bark: function () {
+        return "Woof Woof";
+    }
+}
+console.log(dog.name)
+console.log(dog.legs)
+console.log(dog.color)
+console.log(dog.age)
+console.log(dog.bark())
+
+dog.breed = "Dalmatia"
+dog.getDogInfo = function () {
+  return this.breed
+}
+console.log(dog.getDogInfo())
