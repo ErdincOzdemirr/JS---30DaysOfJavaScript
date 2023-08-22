@@ -50,42 +50,49 @@
 //   }
 //   console.log(person)
 const person = {
-  firstName: 'Erdinc',
-  lastName: 'Ozdemir',
+  firstName: "Erdinc",
+  lastName: "Ozdemir",
   age: 250,
-  country: 'Turkey',
-  city: 'Istanbul',
+  country: "Turkey",
+  city: "Istanbul",
   skills: [
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'React',
-    'Node',
-    'MongoDB',
-    'Java',
-    'SQL'
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Node",
+    "MongoDB",
+    "Java",
+    "SQL",
   ],
-  getFullName: function() {
-    return `${this.firstName} ${this.lastName}`
-  }
-}
-person.nationality = 'Turkısh'
-person.country = 'Turkey'
-person.title = 'Engineer'
-person.skills.push('Meteor')
-person.skills.push('SasS')
-person.isMarried = true
+  getFullName: function () {
+    return `${this.firstName} ${this.lastName}`;
+  },
+};
+const formatter = new Intl. ("en", {
+  style: "long",
+  type: "conjuction",
+});
 
-person.getPersonInfo = function() {
-  let skillsWithoutLastSkill = this.skills
-    .splice(0, this.skills.length - 1)
-    .join(', ')
-  let lastSkill = this.skills.splice(this.skills.length - 1)[0]
+person.nationality = "Turkısh";
+person.country = "Turkey";
+person.title = "Engineer";
+person.skills.push("Meteor");
+person.skills.push("SasS");
+person.isMarried = true;
 
-  let skills = `${skillsWithoutLastSkill}, and ${lastSkill}`
-  let fullName = this.getFullName()
-  let statement = `${fullName} is a ${this.title}.\nHe lives in ${this.country}.\nHe teaches ${skills}.`
-  return statement
-}
-console.log(person)
-console.log(person.getPersonInfo())
+person.getPersonInfo = function () {
+  // let skillsWithoutLastSkill = this.skills
+  //   .splice(0, this.skills.length - 1)
+  //   .join(', ')
+  // let lastSkill = this.skills.at(-1)
+
+  // let skills = `${skillsWithoutLastSkill}, and ${lastSkill}`
+  let skills = formatter.format(this.skills);
+  let fullName = this.getFullName();
+  let statement = `${fullName} is a ${this.title}.\nHe lives in ${this.country}.\nHe teaches ${skills}.`;
+  return statement;
+};
+console.log(person);
+person.skills.push("Python");
+console.log(person.getPersonInfo());
