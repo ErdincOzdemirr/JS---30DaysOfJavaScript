@@ -143,22 +143,105 @@ console.log(person.hasOwnProperty("country"));
 // Exercise lvl1
 
 const dog = {
-    name: "Karabas",
-    legs: 4,
-    color: "White",
-    age: 3,
-    bark: function () {
-        return "Woof Woof";
-    }
-}
-console.log(dog.name)
-console.log(dog.legs)
-console.log(dog.color)
-console.log(dog.age)
-console.log(dog.bark())
+  name: "Karabas",
+  legs: 4,
+  color: "White",
+  age: 3,
+  bark: function () {
+    return "Woof Woof";
+  },
+};
+console.log(dog.name);
+console.log(dog.legs);
+console.log(dog.color);
+console.log(dog.age);
+console.log(dog.bark());
 
-dog.breed = "Dalmatia"
+dog.breed = "Dalmatia";
 dog.getDogInfo = function () {
-  return this.breed
-}
-console.log(dog.getDogInfo())
+  return this.breed;
+};
+console.log(dog.getDogInfo());
+
+// Exercise lvl2
+
+const users = {
+  Alex: {
+    email: "alex@alex.com",
+    skills: ["HTML", "CSS", "JavaScript"],
+    age: 20,
+    isLoggedIn: false,
+    points: 30,
+  },
+  Asab: {
+    email: "asab@asab.com",
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Redux",
+      "MongoDB",
+      "Express",
+      "React",
+      "Node",
+    ],
+    age: 25,
+    isLoggedIn: false,
+    points: 50,
+  },
+  Brook: {
+    email: "daniel@daniel.com",
+    skills: ["HTML", "CSS", "JavaScript", "React", "Redux"],
+    age: 30,
+    isLoggedIn: true,
+    points: 50,
+  },
+  Daniel: {
+    email: "daniel@alex.com",
+    skills: ["HTML", "CSS", "JavaScript", "Python"],
+    age: 20,
+    isLoggedIn: false,
+    points: 40,
+  },
+  John: {
+    email: "john@john.com",
+    skills: ["HTML", "CSS", "JavaScript", "React", "Redux", "Node.js"],
+    age: 20,
+    isLoggedIn: true,
+    points: 50,
+  },
+  Thomas: {
+    email: "thomas@thomas.com",
+    skills: ["HTML", "CSS", "JavaScript", "React"],
+    age: 20,
+    isLoggedIn: false,
+    points: 40,
+  },
+  Paul: {
+    email: "paul@paul.com",
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "MongoDB",
+      "Express",
+      "React",
+      "Node",
+    ],
+    age: 20,
+    isLoggedIn: false,
+    points: 40,
+  },
+};
+const result = Object.entries(users)
+  .sort((a, b) => a[1].skills.length - b[1].skills.length)
+  .pop();
+
+console.log(result);
+
+// 2.2
+const resulting = Object.values(users).filter(user => user.isLoggedIn).length;
+const bigPoints = Object.values(users).filter(user => user.points >= 50).length
+
+console.log(bigPoints);
+console.log(resulting);
