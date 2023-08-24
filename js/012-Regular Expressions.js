@@ -9,7 +9,7 @@ let regEx = new RegExp(pattern, flag);
 
 let regEX2 = /love/gi;
 console.log(regEX2);
-
+// By Erdinc
 let word = /salak/gi;
 let comment = prompt("yaz");
 if (word.test(comment)) {
