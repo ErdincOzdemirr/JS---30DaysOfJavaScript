@@ -64,3 +64,4 @@ console.timeEnd("calculate 1m array");
 console.info("30 Days Of JavaScript challenge is trending on Github");
 console.info("30 Days Of fullStack challenge might be released");
 console.info("30 Days Of HTML and CSS challenge might be released");
+// By Erdinc
