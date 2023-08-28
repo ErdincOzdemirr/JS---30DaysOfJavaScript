@@ -12,6 +12,7 @@ console.log(
   "font-size: 50px; font-family: Arial; color: red; text-shadow: 0 0 10px blue;",
   "font-size: 100px; color: blue; text-shadow: 0 0 10px red;"
 );
+
 // %c ile console style eklenir.
 // Çoklu kelimeye stil vermek için onun başına da %c ekleyip style devam eden parametrede girilir.
 
