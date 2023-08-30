@@ -1,0 +1,25 @@
+[
+  {
+    "firstName": "Erdinc",
+    "lastName": "Ozdemir",
+    "age": 30,
+    "email": "erdincozdemir1812@gmail.com",
+    "skills": ["HTML", "CSS", "JavaScript", "React"]
+  },
+  {
+    "firstName": "Alex",
+    "lastName": "James",
+    "age": 25,
+    "email": "alex@alex.com"
+  },
+  {
+    "firstName": "Lidiya",
+    "lastName": "Tekle",
+    "age": 28,
+    "email": "lidiya@lidiya.com"
+  },
+  {"name":"css","count":5},
+  {"name":"javascript","count":16}
+]
+
+
