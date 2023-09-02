@@ -31,19 +31,29 @@
 
 const API_URL = "https://jsonplaceholder.typicode.com/posts";
 
-console.log(fetch(API_URL));
+// console.log(fetch(API_URL));
 
-fetch(API_URL)
-  .then((res) => res.json())
-  .then((data) => console.log(data))
-  .catch((err) => console.log(err));
+// fetch(API_URL)
+//   .then((res) => res.json())
+//   .then((data) => console.log(data))
+//   .catch((err) => console.log(err));
 
+//   const url = 'https://restcountries.com/v2/all' // countries api
+// fetch(url)
+//   .then(response => response.json()) // API verilerine JSON olarak erişme
+//   .then(data => {
+//     // verileri almak
+//     console.log(data)
+//   })
+//   .catch(error => console.error(error)) // yanlış bir şey olursa işleme hatası
 
-  const url = 'https://restcountries.com/v2/all' // countries api
-fetch(url)
-  .then(response => response.json()) // API verilerine JSON olarak erişme
-  .then(data => {
-    // verileri almak
-    console.log(data)
-  })
-  .catch(error => console.error(error)) // yanlış bir şey olursa işleme hatası
+async function getPosts() {
+  try {
+    const response = await fetch(API_URL);
+    const data = await response.json();
+    console.log(data);
+  } catch (err) {
+    console.error(err);
+  }
+}
+getPosts();
