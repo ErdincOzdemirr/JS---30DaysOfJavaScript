@@ -58,4 +58,3 @@ async function getPosts() {
 }
 getPosts();
 
-by Erdinc Ozdemir 2
