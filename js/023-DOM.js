@@ -41,8 +41,10 @@ button3.addEventListener("click", () => {
     console.log(`senin bmi ${bmi.toFixed(2)}`)
 })
 
-
-
+const input = document.getElementById('name')
+input.addEventListener('input', e => {
+    console.log("bişeyler yazılıyor", e.target.value)
+})
 
 
 
