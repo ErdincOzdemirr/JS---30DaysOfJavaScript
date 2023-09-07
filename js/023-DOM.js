@@ -22,3 +22,52 @@ const clickMe = () => {
 button.addEventListener("dblclick", (e) => {
     console.log("Bana double tıklandı")
 })
+
+const img = document.querySelector('img')
+
+img.addEventListener('load', function() {
+    console.log('Görsel Yüklendi!')
+
+}
+)
+
+const mass = document.querySelector("#mass")
+const height = document.querySelector("#height")
+const button3 = document.querySelector("#bmi")
+
+let bmi ;
+button3.addEventListener("click", () => {
+    bmi = mass.value / height.value ** 2;
+    console.log(`senin bmi ${bmi.toFixed(2)}`)
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
