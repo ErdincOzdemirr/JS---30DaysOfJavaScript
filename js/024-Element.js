@@ -9,12 +9,12 @@ for (const attr of h1.attributes) {
 
 const ul = document.querySelector("ul");
 console.log(ul.childElementCount);
+console.log("first child : " + ul.firstElementChild);
+const deleteButtons = document.querySelectorAll(".delete-btn");
+// const deleteButtons = ul.children;
+console.log("deleteButtons : " + deleteButtons);
 
-// const deleteButtons = document.querySelectorAll('.delete-btn')
-const deleteButtons = ul.children;
-console.log("deleteButtons : "+deleteButtons);
-
-[...deleteButtons].forEach((btn) => {
+deleteButtons.forEach((btn) => {
   btn.addEventListener("click", (e) => {
     e.target.remove();
     if (ul.childElementCount === 0) {
@@ -24,3 +24,13 @@ console.log("deleteButtons : "+deleteButtons);
 });
 
 console.log(ul.childElementCount);
+
+const test = document.querySelector(".test");
+console.log(test.clientHeight);
+
+const ulTest = document.querySelector(".listSelect");
+console.log(ulTest.firstElementChild);
+console.log(ulTest.lastElementChild);
+
+const nextElementSelect = document.querySelector(".test");
+console.log(nextElementSelect.nextElementSibling);
