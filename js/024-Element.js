@@ -34,3 +34,6 @@ console.log(ulTest.lastElementChild);
 
 const nextElementSelect = document.querySelector(".test");
 console.log(nextElementSelect.nextElementSibling);
+
+
+{{{By Erdinç}}}
