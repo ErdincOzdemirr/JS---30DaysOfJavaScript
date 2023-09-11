@@ -6,6 +6,9 @@
     <title>30DaysOfJavaScript</title>
   </head>
   <body>
+
+    <button id="scroll-down">Aşağı Kaydır</button>
+
     <h4>30 Day of JavaScript with ProToTurk</h4>
 
     <h1
@@ -41,19 +44,20 @@
     <h1 class="title">Başlık</h1>
     <p>paragraf</p>
 
-    <div class="scroll-content" style="height: 70px; overflow: auto">
-      test <br>
-      test <br>
-      test <br>
-      test <br>
-      test <br>
-      test <br>
-      test <br>
-      test <br>
-      test <br>
-      test <br>
-      test <br>
+    <div class="scroll-content" style="width: 200px; display: flex; white-space: nowrap; overflow: auto">
+      <div style="width:100px; flex-shrink: 0">test</div>
+      <div style="width:100px; flex-shrink: 0">test</div>
+      <div style="width:100px; flex-shrink: 0">test</div>
+      <div style="width:100px; flex-shrink: 0">test</div>
+      <div style="width:100px; flex-shrink: 0">test</div>
+      <div style="width:100px; flex-shrink: 0">test</div>
     </div>
+
+    <script>
+    console.log(
+        document.querySelector('.scroll-content').scrollWidth
+    )
+    </script>
 
     <script src="./js/024-Element.js"></script>
   </body>

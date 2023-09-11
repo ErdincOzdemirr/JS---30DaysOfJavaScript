@@ -35,5 +35,14 @@ console.log(ulTest.lastElementChild);
 const nextElementSelect = document.querySelector(".test");
 console.log(nextElementSelect.nextElementSibling);
 
+const scrollContent = document.querySelector(".scroll-content");
 
-{{{By Erdinç}}}
+console.log(scrollContent.scrollWidth);
+
+
+const scrollDownBtn = document.getElementById('scroll-down')
+
+scrollDownBtn.addEventListener('click', () => {
+scrollContent.scrollTop += 50
+
+})
