@@ -44,5 +44,4 @@ const scrollDownBtn = document.getElementById('scroll-down')
 
 scrollDownBtn.addEventListener('click', () => {
 scrollContent.scrollTop += 50
-
 })
