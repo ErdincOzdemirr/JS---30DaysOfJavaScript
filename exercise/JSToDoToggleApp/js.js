@@ -1,4 +1,9 @@
-const button = document.querySelector("#btn");
+const buttons = document.querySelectorAll(".btn");
+console.log(buttons);
+
+buttons.forEach((button) => {
+  console.log("button", button);
+//   const button = document.querySelector("#btn");
 // const content = document.getElementById("content");
 
 const content = document.querySelector(button.dataset.target);
@@ -19,4 +24,5 @@ button.addEventListener("click", () => {
     // button.innerText = "Gizle";
     button.innerText = button.dataset.hide;
   }
+});
 });
