@@ -1,11 +1,33 @@
 const button = document.getElementById("generate-color-btn");
 
-const colors = ["red", "blue", "yellow", "green", "purple", "pink", "orange"];
+// ### 1.basit palet. belirli renkleri seçerek renk değişltirme
+// const colors = ["red", "blue", "yellow", "green", "purple", "pink", "orange"];
+
+// button.addEventListener("click", () => {
+//   console.log("tıkladın");
+
+//   const randomNumber = Math.floor(Math.random() * colors.length);
+
+//   document.body.style.backgroundColor = colors[randomNumber];
+// });
+
+
+// #### 2.colorpalette rgb değerindeki 0-256 arası sayı seçerek yapma
 
 button.addEventListener("click", () => {
   console.log("tıkladın");
 
-  const randomNumber = Math.floor(Math.random() * colors.length);
+  const randomNumber1 = Math.floor(Math.random() * 256);
+  const randomNumber2 = Math.floor(Math.random() * 256);
+  const randomNumber3 = Math.floor(Math.random() * 256);
 
-  document.body.style.backgroundColor = colors[randomNumber];
+  console.log(randomNumber1, randomNumber2, randomNumber3);
+
+  document.body.style.backgroundColor = `rgb(${randomNumber1}, ${randomNumber2}, ${randomNumber3})`;
 });
+
+
+// #### 3. Renk değişimini animasyonlu geçiş
+// css de transition komutu eklenir.
+
+// #### 4. Fonksiyon ile renk üretim tekrarından kaçınarak rgb değeri oluşturma
