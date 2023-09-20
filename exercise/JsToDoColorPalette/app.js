@@ -59,9 +59,9 @@ const generateRGBColor = () => {
     generateRandomNumber(255),
     generateRandomNumber(255),
     generateRandomNumber(255),
-  ].join(", ");
+  ];
 };
 button.addEventListener("click", () => {
   console.log("tıkladın");
-  document.body.style.backgroundColor = `rgb(${generateRGBColor()})`;
+  document.body.style.backgroundColor = `rgb(${generateRGBColor().join(", ")})`;
 });
