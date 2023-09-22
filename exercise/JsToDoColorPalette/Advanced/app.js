@@ -1,3 +1,4 @@
+// By Erdinç Özdemir
 // const input = document.querySelector('input[type="range"]');
 // console.log(input);
 
