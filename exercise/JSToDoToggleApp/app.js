@@ -39,3 +39,19 @@ buttons.forEach((button) => {
 // }
   });
 });
+
+// 1. Bir sayacı (counter) 0 olarak tanımla.
+let counter = 0;
+
+// 2. Bir döngü başlat ve döngü koşulu olarak sayacın 10'dan küçük olduğunu kontrol et.
+while (counter < 10) {
+  // 3. Ekrana "Kuş sayısı: " ve sayacın değerini yazdır.
+  console.log("Kuş sayısı: " + counter);
+
+  // 4. Sayacın değerini 1 artır.
+  counter++;
+
+  // 5. Döngüye geri dön ve 2. adımdan devam et.
+}
+
+// 6. Döngü koşulu sağlanmadığı zaman döngüden çık.
