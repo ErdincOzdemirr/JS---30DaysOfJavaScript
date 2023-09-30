@@ -1,3 +1,4 @@
+// by erdinç
 // const test = (callback) => {
 //   setTimeout(() => {
 //     callback("hata oluştu!", []);
@@ -38,14 +39,14 @@ fetch(API_URL)
   .then((data) => console.log(data))
   .catch((err) => console.log(err));
 
-  const url = 'https://restcountries.com/v2/all' // countries api
+const url = "https://restcountries.com/v2/all"; // countries api
 fetch(url)
-  .then(response => response.json()) // API verilerine JSON olarak erişme
-  .then(data => {
+  .then((response) => response.json()) // API verilerine JSON olarak erişme
+  .then((data) => {
     // verileri almak
-    console.log(data)
+    console.log(data);
   })
-  .catch(error => console.error(error)) // yanlış bir şey olursa işleme hatası
+  .catch((error) => console.error(error)); // yanlış bir şey olursa işleme hatası
 
 async function getPosts() {
   try {
@@ -57,4 +58,3 @@ async function getPosts() {
   }
 }
 getPosts();
-
